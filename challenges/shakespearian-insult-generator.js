@@ -20,7 +20,14 @@ var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skain
 var inputN = prompt("Please input the quantity of insults to be generated.", "e.g. 1, 2, 3...");
 var n = Number(inputN);
 function generateInsult(n) {
-      
+      if (n === 1) {
+        var fw = first_word(math.floor((Math.random()*10)));
+      }
+      else if (n === 2) {
+
+
+      }
+      else if (n )
 
 
 }

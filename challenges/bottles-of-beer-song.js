@@ -38,7 +38,7 @@ function bottlesOfBeer(numBottles) {
         alert(i+" bottles of beer!");
         alert("Take one down and pass it around,");
         if (i!==2) {
-        alert((i-1)+" bottles of beer on the wall..." );
+        alert((i-1)+" bottles of beer on the wall..." ) ;
       }
     }
   }
