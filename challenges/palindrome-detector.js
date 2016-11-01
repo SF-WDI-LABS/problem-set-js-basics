@@ -21,3 +21,21 @@
 */
 
 // YOUR CODE HERE
+var word = prompt("Please input the word you would like analyzed.", " ");
+var word2 = word.toString();
+var leng = word2.length;
+word2 = word2.toLowerCase();
+
+function isPalindrome(word2) {
+    for (var i = 0; i < leng/2; i++) {
+      if (word2[i] !== word2[leng-1-i]) {
+        console.log("false");
+        break;
+      }
+      else {
+        console.log("true");
+        break;
+      }
+   }   
+}
+isPalindrome(word2);

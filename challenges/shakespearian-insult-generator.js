@@ -17,3 +17,17 @@ var second_word = ["weather-bitten", "unchin-snouted", "toad-spotted", "tickle-b
 var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skainsmate", "scut", "ratsbane", "pumpion", "puttock", "pignut", "pigeon-egg", "nut-hook", "mumble-news", "moldwarp", "miscreant", "minnow", "measle", "mammet", "malt-worm", "maggot-pie", "lout", "lewdster", "joithead", "hugger-mugger", "horn-beast", "hedge-pig", "harpy", "haggard", "gudgeon", "giglet", "fustilarian", "foot-licker", "flirt-gill", "flax-wench", "flap-dragon", "dewberry", "death-token", "codpiece", "coxcomb", "clotpole", "clack-dish", "canker-blossom", "bum-bailey", "bugbear", "boar-pig", "bladder", "barnacle", "baggage", "apple-john"];
 
 // YOUR CODE HERE
+var inputN = prompt("Please input the quantity of insults to be generated.", "e.g. 1, 2, 3...");
+var n = Number(inputN);
+function generateInsult(n) {
+      if (n === 1) {
+        var fw = first_word(math.floor((Math.random()*10)));
+      }
+      else if (n === 2) {
+
+
+      }
+      else if (n )
+
+
+}
