@@ -2,13 +2,12 @@
 
 * Please **Fork & Clone** this repo.
 * For each problem, modify the relevant file in the `challenges`folder. We encourage you to *commit often* and push your changes to github.
-* You will [submit this problem set for review](https://github.com/SF-WDI-LABS/shared_modules/blob/master/how-to/submit-homework.md).
+* You will [submit this problem set for review](https://github.com/SF-WDI-LABS/shared_modules/blob/master/how-to/submit-homework.md). Make sure to submit your pull request by Thursday morning. We will particularly look at the Shakespearian Insult Generator and Palindrome Detector, so focus your energy on those problems.
 
 ## Challenges
-1. [Bottles of Adult Beverages](/challenges/bottles-of-beer-song.js)
-2. [Prime Numbers](/challenges/primes.js)
-3. [Shakespearian Insult Generator](/challenges/shakespearian-insult-generator.js)
-4. [Palindrome Detector](/challenges/palindrome-detector.js)
+1. [Shakespearian Insult Generator](/challenges/shakespearian-insult-generator.js)
+2. [Palindrome Detector](/challenges/palindrome-detector.js)
+3. [Prime Numbers](/challenges/primes.js)
 
 ## Executing your code
 There are a number of options for running/executing your code. They all have their uses, so we encourage you to learn all of them:
