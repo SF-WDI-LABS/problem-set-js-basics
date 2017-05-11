@@ -18,7 +18,11 @@ var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skain
 
 // YOUR CODE HERE
 var input = prompt("Please enter a name");
+//var num = (Math.floor(Math.random() * 10));
 function generateInsult(){
-  var insult = "You " + input + ", " + "you " + first_word[12] + ", " + second_word[31] + ", " + third_word[16] + ", you!";
+  var num = (Math.floor(Math.random() * 10));
+  if(num <= (first_word.length - 1) && num <= (second_word.length - 1) && num <= (third_word.length - 1)){
+  var insult = "You " + input + ", " + "you " + first_word[num] + ", " + second_word[num] + ", " + third_word[num] + ", you!";
+}
   return alert(insult);
 }
