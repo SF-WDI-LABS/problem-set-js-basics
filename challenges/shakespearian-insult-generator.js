@@ -44,4 +44,25 @@ var nounChosen = getRandomIntInclusive(0,numberOfNouns);
 // go into var third-word and pick a word, this will be the last word;
 var finalNoun = third_word[nounChosen];
 
-// 1) 
+// 1) now its time to select one word and two words but this is tricky b/c it can depend on n
+// 2) if integer = 1, use var finalNoun;
+
+if (userInput === 1) {
+  return  ('You ' + finalNoun);
+}
+function generateInsults(userInput) {
+
+}
+
+generateInsults(2);
+
+// if integer = 2, combine both array first & second and select a random
+if (userInput === 2) {
+  var combinedFirstandSecond = first_word.concat(second_word);
+  var numberOfCombinedAdjs = combinedFirstandSecond.length - 1;
+  var combinedChosen = getRandomIntInclusive(0,numberOfCombinedAdjs);
+  var finalCombined = combinedFirstandSecond[combinedChosen];
+  console.log('You ' + finalCombined + " " + finalNoun);
+}
+// if integer = 3, select one from first and select from second_word
+// if integer > 3, then select odd from first and even from second; until you reach n - 1
