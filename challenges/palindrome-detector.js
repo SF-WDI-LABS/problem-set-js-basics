@@ -21,3 +21,28 @@
 */
 
 // YOUR CODE HERE
+
+
+// whats the input/word that we want to check?
+// does it have weird symbols
+// whether it does or not , strip all non-alpha
+// lowercase everything
+// get rid of all spaces;
+// is there a javscript formual to flip the word?
+
+function isPalindrome(text) {
+  var strippedWord = text.replace(/[\W_]/g, ""); //stackoverflow
+  var lowercaseWord = strippedWord.toLowerCase();
+  var flipWord = lowercaseWord.split('').reverse().join(''); //stackoverflow
+  if (lowercaseWord != flipWord) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+//a.replace(/[\W_]/g, ""); // stackoverflow
+
+
+
+isPalindrome(" adsf&ASDFSADLFJ ASDKF SADKFJ ASDKFJ&&&02I am not :::,,,aslfmommsdfklsj asdlkfjslkf ");
