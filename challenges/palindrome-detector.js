@@ -21,3 +21,22 @@
 */
 
 // YOUR CODE HERE
+function reverseString(string) {
+  var arr = [];
+  var str = '';
+   arr = string.split('');
+   str = arr.reverse().join().replace(/,/g , "");
+   var revStr = str.replace(/\s/g , "");
+   return revStr;
+}
+
+function isPalindrome(str){
+  var revStr = reverseString(str);
+  var newStr = str.replace(/\s/g , "");
+  if( newStr === revStr ){
+    return true;
+  }
+  else {
+    return false;
+  }
+}
