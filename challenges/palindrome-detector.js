@@ -21,3 +21,9 @@
 */
 
 // YOUR CODE HERE
+let regex = /[\W_]/g;
+
+function isPalindrome(word) {
+  let bones = word.toLowerCase().replace(regex, '').split('');
+  return (bones.join('') === bones.reverse().join(''));
+}
