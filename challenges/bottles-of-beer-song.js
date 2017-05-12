@@ -22,3 +22,19 @@
 */
 
 // YOUR CODE HERE
+let units = " bottles of beer";
+const refrain = "Take one down and pass it around,";
+
+for (let i = 5; i > 0; i--) {
+  if (i > 1) {
+    console.log(i + units + " on the wall,");
+    console.log(i + units + "!");
+    console.log(refrain);
+    console.log(i - 1 + units + "...\n\r\n\r");
+  } else {
+    console.log(i + " bottle of beer on the wall,");
+    console.log(i + " bottle of beer!");
+    console.log(refrain);
+    console.log("No more" + units + "...");
+  }
+}

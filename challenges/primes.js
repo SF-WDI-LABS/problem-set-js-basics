@@ -10,3 +10,25 @@
 */
 
 // YOUR CODE HERE
+let primeArray = [];
+
+function isPrime(number) {
+  for (let i = 2; i < number; i++) {
+    if (number % i !== 0) {
+      console.log(number + " is prime");
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
+function allPrimes(number) {
+  for (let i = 2; i < number; i++) {
+    if (isPrime(i)) {
+    primeArray.push(i);
+      console.log(i);
+  }
+ }
+  console.log(primeArray);
+}
