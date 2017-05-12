@@ -21,3 +21,11 @@
 */
 
 // YOUR CODE HERE
+
+function palindrome(str) {
+  var re = /[\W_]/g;
+  // yep, I Googled the F out of this, but I think I get how RegExp works, when we get there ;)
+  var lowRegStr = str.toLowerCase().replace(re, '');
+  var reverseStr = lowRegStr.split('').reverse().join('');
+  return reverseStr === lowRegStr;
+}

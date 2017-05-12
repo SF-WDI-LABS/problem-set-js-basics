@@ -8,5 +8,25 @@
   Reading: http://stackoverflow.com/questions/439870/why-are-primes-important-in-cryptography
 
 */
+//
 
 // YOUR CODE HERE
+
+function isPrime(num) {
+    for(var i = 2; i < num; i++) {
+        if(num % i === 0) {
+            return false;
+        }
+    }
+    return num > 1;
+}
+
+function primes(max) {
+  var makeArray = [];
+  for (var i = 2; i < max; i++) {
+    if (isPrime(i)) {
+      makeArray.push(i);
+    }
+  }
+  return makeArray;
+}
