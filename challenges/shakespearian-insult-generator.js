@@ -67,24 +67,26 @@ function generateInsults(userInput) {
       console.log('You ' + finalFirst + " " + finalSecond + " " + finalNoun);
   }
   else if (userInput >= 4) {
-  // take the user input # and -1 b/c need to reserve last spot for noun.
-    var longInsult = [];
-    longInsult.push(finalFirst);
-    longInsult.push(finalSecond);
-    //console.log(longInsult.length);
-  // get a random number
-  // do a loop starting at 3 and ending at input
-  // select odd and even
-  // reserve last spot for noun;
-  // maybe two for loops, one for even, and one for odd,
-    for(i = 2; i < (userInput - 2); i+=1) {
-      console.log(firstChosen);
+      for(i = 0; i < (userInput - 1); i+=1) {
+      var combineForLong = first_word.concat(second_word);
+      var combinedMaxLength = combineForLong.length - 1;
+      var combinedRandom = getRandomIntInclusive(0,combinedMaxLength);
+      longInsult.push(combineForLong[combinedRandom]);
+      console.log(longInsult);
+    }
+    longInsult.push(finalNoun);
+    var finalLong = ('You ' + longInsult.join(" ") + '.');
+    console.log(finalLong);
+//var str = array.join(" "); // 'apple tree'
+
     }
 
   }
 
-}
 
+// longInsult.push(finalFirst);
+// longInsult.push(finalSecond);
+var longInsult = [];
 var numberOfFirst = first_word.length - 1;
 var firstChosen = getRandomIntInclusive(0,numberOfFirst);
 var finalFirst = first_word[firstChosen];
