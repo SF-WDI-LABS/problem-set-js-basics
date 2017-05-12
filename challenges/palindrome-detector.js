@@ -21,3 +21,23 @@
 */
 
 // YOUR CODE HERE
+// This is a function to reverse a string
+function reverseString(string) {
+  var arr = [];
+  var str = '';
+   arr = string.split('');
+   str = arr.reverse().join().replace(/,/g , "");
+   var revStr = str.replace(/\s/g , "");
+   return revStr;
+}
+
+function isPalindrome(str){
+  var revStr = reverseString(str);// reverseString(string) is called here
+  var newStr = str.replace(/\s/g , "");
+  if( newStr === revStr ){
+    return true;
+  }
+  else {
+    return false;
+  }
+}
