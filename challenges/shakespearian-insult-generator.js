@@ -5,11 +5,11 @@
 
   Bonuses:
   - Encapsulate your logic in a `generateInsult` function
-  - Randomly generate 1 word, 2 word, and n word insults.
+  - Randomly generate 1 word, 2 word, and n number of word insults.
   - Generate any number of insults, depending on a user supplied integer. (e.g. generateInsults(3) )
   - Allow the user to supply a proper name as an input. ("Why Justin, you villainous toad-spotted strumpet!").
   - Create a browser interface, using some combination of `prompt`, `alert`, and/or DOM manipulation.
-
+http://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript
 */
 
 var first_word = ["yeasty", "weedy", "wayward", "warped", "villainous", "venomed", "vain", "unmuzzled", "tottering", "surly", "spongy", "spleeny", "saucy", "ruttish", "roguish", "reeky", "rank", "qualling", "puny", "puking", "pribbling", "paunchy", "mewling", "mangled", "mammering", "lumpish", "loggerheaded", "jarring", "infectious", "impertinent", "gorbellied", "goatish", "gleeking", "frothy", "froward", "fobbing", "fawning", "errant", "droning", "dissembling", "dankish", "currish", "craven", "clouted", "cockered", "churlish", "bootless", "beslubbering", "bawdy", "artless"];
@@ -17,3 +17,21 @@ var second_word = ["weather-bitten", "unchin-snouted", "toad-spotted", "tickle-b
 var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skainsmate", "scut", "ratsbane", "pumpion", "puttock", "pignut", "pigeon-egg", "nut-hook", "mumble-news", "moldwarp", "miscreant", "minnow", "measle", "mammet", "malt-worm", "maggot-pie", "lout", "lewdster", "joithead", "hugger-mugger", "horn-beast", "hedge-pig", "harpy", "haggard", "gudgeon", "giglet", "fustilarian", "foot-licker", "flirt-gill", "flax-wench", "flap-dragon", "dewberry", "death-token", "codpiece", "coxcomb", "clotpole", "clack-dish", "canker-blossom", "bum-bailey", "bugbear", "boar-pig", "bladder", "barnacle", "baggage", "apple-john"];
 
 // YOUR CODE HERE
+function shakesperianInsultGenerator() {
+  i = Math.floor(Math.random() * 50) + 1;
+  let insult = "Why Timmy, you " + first_word[i] + " " + second_word[i] + " " + third_word[i] + ".";
+  return insult;
+}
+
+function generateInsult(num) {
+  let name = prompt("Who should Shakespeare insult?")
+  let allInsults = first_word.concat(second_word, third_word)
+  if (num === 1) {
+     alert("Why, " + name + " you " + allInsults[ Math.floor(Math.random() * allInsults.length)] + "!");
+  }
+  let insultGenerator = [];
+    for (n = 0; n <= (num - 1); n++) {
+      insultGenerator.push(allInsults[Math.floor(Math.random() * allInsults.length)]);
+    }
+      alert("Why, " + name + " you " + insultGenerator.join(', ') + '!')
+}
