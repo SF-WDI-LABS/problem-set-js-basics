@@ -10,3 +10,25 @@
 */
 
 // YOUR CODE HERE
+
+function isPrime(num) {
+	for (let i = 2; i < num; i++) {
+		if (num % i === 0) {
+			return false;
+		} 
+		return true;
+		}
+
+};
+
+function primes(max){
+	let primesArray = [];
+	for (let i = 2; i < max; i++) {
+		if (isPrime(i)) {
+			primesArray.push(i);
+		}
+	}
+	return primesArray;
+};
+
+

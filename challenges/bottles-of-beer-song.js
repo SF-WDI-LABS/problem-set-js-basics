@@ -22,3 +22,21 @@
 */
 
 // YOUR CODE HERE
+
+function sing(bottle) {
+  for (var i = bottle; i > 0; i--) {
+  if (i > 1) {
+    console.log(`${i} bottles of beer on the wall,\n${i} bottles of beer.\nTake one down, pass it around`);
+    if (i - 2 === 0) {
+      console.log(`${i-1} bottle of beer on the wall...`);
+    } else {
+      console.log(`${i-1} bottles of beer on the wall...`);
+    }
+  } else if (i === 1) {
+    console.log(`${i} bottle of beer on the wall,\n${i} bottle of beer.\nTake one down, pass it around\nNo more beer - you're drunk, go home.`);
+  }
+}
+};
+
+
+
