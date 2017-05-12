@@ -16,4 +16,27 @@ var first_word = ["yeasty", "weedy", "wayward", "warped", "villainous", "venomed
 var second_word = ["weather-bitten", "unchin-snouted", "toad-spotted", "tickle-brained", "tardy-gaited", "swag-bellied", "spur-galled", "sheep-biting", "shard-borne", "rump-fed", "rude-growing", "rough-hewn", "reeling-ripe", "pox-marked", "pottle-deep", "plume-plucked", "onion-eyed", "motley-minded", "milk-livered", "knotty-pated", "ill-nurtured", "ill-breeding", "idle-headed", "hell-hated", "hedge-born", "hasty-witted", "half-faced", "guts-griping", "full-gorged", "fool-born", "folly-fallen", "fly-bitten", "flap-mouthed", "fen-sucked", "fat-kidneyed", "elf-skinned", "earth-vexing", "dread-bolted", "doghearted", "dizzy-eyed", "dismal-dreaming", "crook-pated", "common-kissing", "clay-brained", "clapper-clawed", "boil-brained", "beetle-headed", "beef-witted", "bat-fowling", "base-court"];
 var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skainsmate", "scut", "ratsbane", "pumpion", "puttock", "pignut", "pigeon-egg", "nut-hook", "mumble-news", "moldwarp", "miscreant", "minnow", "measle", "mammet", "malt-worm", "maggot-pie", "lout", "lewdster", "joithead", "hugger-mugger", "horn-beast", "hedge-pig", "harpy", "haggard", "gudgeon", "giglet", "fustilarian", "foot-licker", "flirt-gill", "flax-wench", "flap-dragon", "dewberry", "death-token", "codpiece", "coxcomb", "clotpole", "clack-dish", "canker-blossom", "bum-bailey", "bugbear", "boar-pig", "bladder", "barnacle", "baggage", "apple-john"];
 
+
+
+
+
 // YOUR CODE HERE
+    // run function in console below first
+function generateInsult(n) {
+    var firstName = prompt("What is your first name?");
+    var first = first_word[parseInt(Math.random() * first_word.length)];
+    var second = second_word[parseInt(Math.random() * second_word.length)];
+    var third = third_word[parseInt(Math.random() * third_word.length)];
+    if (n === 1) {
+        alert(firstName + ", you " + first + "!");
+    } if (n === 2) {
+        alert(firstName + ", you " + first + ", " + second + "!");
+    } if (n === 3) {
+        alert(firstName + ", you " + first + ", " + second + ", " + third + "!");
+    }
+    else {
+        alert("Try again. Enter a number greater than zero and less than four.");
+    }
+}
+ // call on the function with a number between 1 and 3
+ generateInsult();

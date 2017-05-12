@@ -21,3 +21,7 @@
 */
 
 // YOUR CODE HERE
+function isPalindrome(input) {
+    return (input.toLowerCase('').split('').reverse().join('') === input);
+}
+    // source: https://medium.freecodecamp.com/two-ways-to-check-for-palindromes-in-javascript-64fea8191fd7
