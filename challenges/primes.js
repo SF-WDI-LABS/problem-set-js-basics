@@ -10,3 +10,28 @@
 */
 
 // YOUR CODE HERE
+
+
+function isPrime(value) {
+    for(var i = 2; i < value; i++) {
+        if(value % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function primes(max) {
+  var primesArray = [];
+  for (var i=2; i<max; i++) {
+    if (isPrime(i)) {
+      primesArray.push(i);
+    }
+  }
+  return primesArray;
+}
+
+/*
+used:
+http://stackoverflow.com/questions/11966520/how-to-find-prime-numbers-between-0-100
+*/

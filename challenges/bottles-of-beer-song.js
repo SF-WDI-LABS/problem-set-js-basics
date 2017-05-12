@@ -16,9 +16,29 @@
   ```
 
   Bonuses
-  - How would you change "0" to "No more"?
-  - How would you fix "1 bottles of beer"?
+  - How would you change "0" to "No more"? - How would you fix "1 bottles of beer"?
 
 */
 
 // YOUR CODE HERE
+
+
+function bottlesofbeer(n){
+  for (let i=n; i > 0; i--) {
+    if (i > 1) {
+      console.log([i] + " bottles of beer on the wall,");
+      console.log([i] + " bottles of beer!");
+      console.log("Take one down and pass it around");
+    if (i-1 === 1) {
+      console.log("One bottle of beer on the wall...");
+    } else {
+      console.log((i-1) + "bottles of beer on the wall...");
+    }
+  } else if (i === 1) {
+        console.log("One bottle of beer on the wall,");
+        console.log("One bottle of beer!");
+        console.log("Take it down and pass it around,");
+        console.log ("No more bottles of beer on the wall!");
+    }
+    }
+  }
