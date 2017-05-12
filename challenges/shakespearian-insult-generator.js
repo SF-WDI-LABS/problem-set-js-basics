@@ -18,25 +18,18 @@ var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skain
 
 // YOUR CODE HERE
 
-let firstRandomNumber = Math.floor(Math.random() * first_word.length);
+let firstRandomNumber = first_word[Math.floor(Math.random() * first_word.length)];
 
-let randomOne = first_word[firstRandomNumber];
+let secondRandomNumber = second_word[Math.floor(Math.random() * second_word.length)];
 
-let secondRandomNumber = Math.floor(Math.random() * second_word.length);
-
-let randomTwo = second_word[secondRandomNumber];
-
-let thirdRandomNumber = Math.floor(Math.random() * third_word.length);
-
-let randomThree = third_word[thirdRandomNumber];
+let thirdRandomNumber = third_word[Math.floor(Math.random() * third_word.length)];
 
 let generateInsult = function () {
   let toInsult = prompt("To insult thee or not to insult thee? Please type yes or no.");
   if (toInsult.toLowerCase() === "yes") {
-    alert("You " + randomOne + ", " + randomTwo + ", " + randomThree + ", " + "you!");
+    alert("You " + firstRandomNumber + ", " + secondRandomNumber + ", " + thirdRandomNumber + ", " + "you!");
   } else {
-    alert("To BAD! You " + randomOne + ", " + randomTwo + ", " + randomThree + ", " + "you!");
-  }
+    alert("To BAD! You " + firstRandomNumber + ", " + secondRandomNumber + ", " + thirdRandomNumber + ", " + "you!");
 }
 
 generateInsult();
