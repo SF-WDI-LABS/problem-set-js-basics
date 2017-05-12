@@ -4,11 +4,11 @@
   You saucy, fly-bitten, minnow, you! Randomly generate some zingers using the supplied list of words!
 
   Bonuses:
-  - Encapsulate your logic in a `generateInsult` function
+  + Encapsulate your logic in a `generateInsult` function
   - Randomly generate 1 word, 2 word, and n word insults.
   - Generate any number of insults, depending on a user supplied integer. (e.g. generateInsults(3) )
-  - Allow the user to supply a proper name as an input. ("Why Justin, you villainous toad-spotted strumpet!").
-  - Create a browser interface, using some combination of `prompt`, `alert`, and/or DOM manipulation.
+  + Allow the user to supply a proper name as an input. ("Why Justin, you villainous toad-spotted strumpet!").
+  + Create a browser interface, using some combination of `prompt`, `alert`, and/or DOM manipulation.
 
 */
 
@@ -17,3 +17,17 @@ var second_word = ["weather-bitten", "unchin-snouted", "toad-spotted", "tickle-b
 var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skainsmate", "scut", "ratsbane", "pumpion", "puttock", "pignut", "pigeon-egg", "nut-hook", "mumble-news", "moldwarp", "miscreant", "minnow", "measle", "mammet", "malt-worm", "maggot-pie", "lout", "lewdster", "joithead", "hugger-mugger", "horn-beast", "hedge-pig", "harpy", "haggard", "gudgeon", "giglet", "fustilarian", "foot-licker", "flirt-gill", "flax-wench", "flap-dragon", "dewberry", "death-token", "codpiece", "coxcomb", "clotpole", "clack-dish", "canker-blossom", "bum-bailey", "bugbear", "boar-pig", "bladder", "barnacle", "baggage", "apple-john"];
 
 // YOUR CODE HERE
+
+// ** NOTE ** uncomment the two commented lines of code and comment out the second console.log to get my answer for bonus #4 
+
+function generateInsult() {
+	//userInput = prompt("Who doth thou hate?")
+	let fw = first_word[Math.floor(Math.random()*50)];
+	let sw = second_word[Math.floor(Math.random()*50)];
+	let tw = third_word[Math.floor(Math.random()*50)];
+	//console.log(`${userInput} is a ${fw}, ${sw}, ${tw}.`);
+	console.log(`Juliet's father thinks Romeo is a ${fw}, ${sw}, ${tw}.`);
+	
+};
+
+document.getElementById('test').addEventListener('click', generateInsult, false);
