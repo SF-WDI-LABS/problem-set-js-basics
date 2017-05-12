@@ -9,4 +9,26 @@
 
 */
 
-// YOUR CODE HERE
+function isPrime(num) {
+
+  if (num <= 1 || Number.isInteger(num) === false) {
+    return false;
+  } else {
+    for (var i = 2; i < num; i++) {
+      if (num % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+}
+
+function primes(max) {
+  var arr = [];
+  for (var i = 1; i <= max; i++) {
+    if (isPrime(i)) {
+      arr.push(i);
+    }
+  }
+  return arr;
+}
