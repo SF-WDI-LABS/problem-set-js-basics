@@ -1,3 +1,5 @@
+## I'm updating the README.md file as per the instructions given in class, but I don't know if it will work & I am not sure what information I am supposed to put here. - Aly
+
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Javascript Basics - Problem Set
 
 * Please **Fork & Clone** this repo.
