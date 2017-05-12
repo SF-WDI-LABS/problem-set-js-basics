@@ -21,3 +21,9 @@
 */
 
 // YOUR CODE HERE
+
+let isPalindrome = function(doesItPalindrome) {
+  return (doesItPalindrome.split('').reverse().join('') === doesItPalindrome;)
+}
+
+isPalindrome("chris");

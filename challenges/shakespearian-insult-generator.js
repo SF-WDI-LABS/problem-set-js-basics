@@ -17,3 +17,26 @@ var second_word = ["weather-bitten", "unchin-snouted", "toad-spotted", "tickle-b
 var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skainsmate", "scut", "ratsbane", "pumpion", "puttock", "pignut", "pigeon-egg", "nut-hook", "mumble-news", "moldwarp", "miscreant", "minnow", "measle", "mammet", "malt-worm", "maggot-pie", "lout", "lewdster", "joithead", "hugger-mugger", "horn-beast", "hedge-pig", "harpy", "haggard", "gudgeon", "giglet", "fustilarian", "foot-licker", "flirt-gill", "flax-wench", "flap-dragon", "dewberry", "death-token", "codpiece", "coxcomb", "clotpole", "clack-dish", "canker-blossom", "bum-bailey", "bugbear", "boar-pig", "bladder", "barnacle", "baggage", "apple-john"];
 
 // YOUR CODE HERE
+
+let firstRandomNumber = Math.floor(Math.random() * first_word.length);
+
+let randomOne = first_word[firstRandomNumber];
+
+let secondRandomNumber = Math.floor(Math.random() * second_word.length);
+
+let randomTwo = second_word[secondRandomNumber];
+
+let thirdRandomNumber = Math.floor(Math.random() * third_word.length);
+
+let randomThree = third_word[thirdRandomNumber];
+
+let generateInsult = function () {
+  let toInsult = prompt("To insult thee or not to insult thee? Please type yes or no.");
+  if (toInsult.toLowerCase() === "yes") {
+    alert("You " + randomOne + ", " + randomTwo + ", " + randomThree + ", " + "you!");
+  } else {
+    alert("To BAD! You " + randomOne + ", " + randomTwo + ", " + randomThree + ", " + "you!");
+  }
+}
+
+generateInsult();
