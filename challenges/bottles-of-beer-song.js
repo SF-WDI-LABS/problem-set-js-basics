@@ -22,3 +22,23 @@
 */
 
 // YOUR CODE HERE
+let singSong = [" bottles of beer on the wall,", " bottles of beer!", "Take one down and pass it around,"]
+
+let howManyBottles = prompt("How many bottles should we start with?");
+
+for (let i = howManyBottles; i >= 0; i -= 1) {
+  if (i > 1) {
+    console.log( i + " " + singSong[0]);
+    console.log( i + " " + singSong[0]);
+    console.log( i + " " + singSong[1]);
+    console.log( singSong[2]);
+  } else if ( i === 1) {
+    console.log( i + " " + "bottle of beer on the wall.");
+    console.log( i + " " + "bottle of beer on the wall.");
+    console.log( i + " " + "bottle of beer.");
+    console.log( singSong[2]);
+    console.log("No more bottles of beer on the wall");
+    console.log("No more bottles of beer on the wall");
+    console.log("No more bottles of BEER!");
+  }
+}
