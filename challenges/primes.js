@@ -10,3 +10,23 @@
 */
 
 // YOUR CODE HERE
+function isPrime(num) {
+    // start at 2 since 0 and 1 are not prime numbers
+    for(var i = 2; i < num; i++) {
+        if(num % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// function to return array of all prime numbers up to max value
+function primes(max) {
+    var primesArray = [];
+    for(var i = 2; i < max; i++) {
+        if(isPrime(i)) {
+            primesArray.push(i);
+        }
+    }
+    return primesArray;
+}
