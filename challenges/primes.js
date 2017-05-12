@@ -10,3 +10,16 @@
 */
 
 // YOUR CODE HERE
+function getPrimes(max) {
+    var prime = [], i, j, primes = [];
+    for (i = 2; i <= max; ++i) {
+        if (!prime[i]) {
+            // i has not been marked -- it is prime
+            primes.push(i);
+            for (j = i << 1; j <= max; j += i) {
+                prime[j] = true;
+            }
+        }
+    }
+    return primes;
+}
