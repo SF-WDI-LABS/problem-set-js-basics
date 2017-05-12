@@ -54,7 +54,7 @@ function generateInsults(userInput) {
     console.log('You ' + finalNoun);
   }
   // if integer = 2, combine both array first & second and select a random
-  if (userInput === 2) {
+  else if (userInput === 2) {
     var combinedFirstandSecond = first_word.concat(second_word);
     var numberOfCombinedAdjs = combinedFirstandSecond.length - 1;
     var combinedChosen = getRandomIntInclusive(0,numberOfCombinedAdjs);
@@ -63,21 +63,23 @@ function generateInsults(userInput) {
   }
   // if integer = 3, select one from first and select from second_word
   // if integer > 3, then select odd from first and even from second; until you reach n - 1
-  if (userInput === 3) {
+  else if (userInput === 3) {
       console.log('You ' + finalFirst + " " + finalSecond + " " + finalNoun);
   }
-  if (userInput >= 4) {
+  else if (userInput >= 4) {
   // take the user input # and -1 b/c need to reserve last spot for noun.
     var longInsult = [];
     longInsult.push(finalFirst);
     longInsult.push(finalSecond);
-    console.log(longInsult.length);
+    //console.log(longInsult.length);
   // get a random number
   // do a loop starting at 3 and ending at input
   // select odd and even
   // reserve last spot for noun;
   // maybe two for loops, one for even, and one for odd,
-  
+    for(i = 2; i < (userInput - 2); i+=1) {
+      console.log(firstChosen);
+    }
 
   }
 
@@ -90,4 +92,4 @@ var numberOfSecond = second_word.length - 1;
 var secondChosen = getRandomIntInclusive(0,numberOfSecond);
 var finalSecond = second_word[secondChosen];
 
-generateInsults(4);
+generateInsults(10);
