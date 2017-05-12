@@ -10,3 +10,22 @@
 */
 
 // YOUR CODE HERE
+let isPrime = function(num){
+	for(let i = 2; i<num; i++){
+		if(num % i === 0){
+			return false;
+		} else {
+			return true; 
+		}
+	}
+}
+
+let primes = function(max){
+	var primeArray = [];
+	for(let i = 2; i<max; i++){
+		if(isPrime(i)) {
+			primeArray.push(i);
+		}
+	}
+	return primeArray; 
+}
