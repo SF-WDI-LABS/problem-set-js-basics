@@ -17,7 +17,15 @@
   - these
   - will not
   - work!
-
+  http://stackoverflow.com/questions/10346722/how-can-i-split-a-javascript-string-by-white-space-or-comma
+https://medium.freecodecamp.com/two-ways-to-check-for-palindromes-in-javascript-64fea8191fd7
 */
 
 // YOUR CODE HERE
+function isPalindrome(str) {
+let re = /[\W_]/g;
+let lowRegStr = str.toLowerCase().replace(re, '');
+let reverseStr = lowRegStr.split('').reverse().join('')
+return reverseStr === lowRegStr;
+}
+isPalindrome("A man, a plan, a canal. Panama");
