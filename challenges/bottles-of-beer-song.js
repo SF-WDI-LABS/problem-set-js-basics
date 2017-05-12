@@ -1,3 +1,4 @@
+
 /*
 
   Create the "Bottles of beer on the wall" song (watch out for infinite loops!):
@@ -22,3 +23,26 @@
 */
 
 // YOUR CODE HERE
+
+
+function bottlesOfBeer(n) {
+  for (let i=n; i>0; i--) {
+    if (i > 2) {
+      console.log ([i] + " bottles of beer on the wall,");
+      console.log ([i] + " bottles of beer!");
+      console.log ("Take one down and pass it around,");
+      console.log ([i-1] + " bottles of beer on the wall...");
+  }
+    else if (i = 1) {
+      console.log ([i+1] + " bottles of beer on the wall,");
+      console.log ([i+1] + " bottles of beer!");
+      console.log ("Take one down and pass it around,");
+      console.log ([i] + " bottle of beer on the wall!");
+      console.log ([i] + " bottle of beer on the wall!");
+      console.log ([i] + " bottle of beer!");
+      console.log ("Take one down and pass it around,");
+      console.log ("No more bottles of beer on the wall...");
+      console.log ("No more bottles of beer on the wall! No more bottles of beer!");
+    }
+    }
+  }

@@ -17,3 +17,17 @@ var second_word = ["weather-bitten", "unchin-snouted", "toad-spotted", "tickle-b
 var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skainsmate", "scut", "ratsbane", "pumpion", "puttock", "pignut", "pigeon-egg", "nut-hook", "mumble-news", "moldwarp", "miscreant", "minnow", "measle", "mammet", "malt-worm", "maggot-pie", "lout", "lewdster", "joithead", "hugger-mugger", "horn-beast", "hedge-pig", "harpy", "haggard", "gudgeon", "giglet", "fustilarian", "foot-licker", "flirt-gill", "flax-wench", "flap-dragon", "dewberry", "death-token", "codpiece", "coxcomb", "clotpole", "clack-dish", "canker-blossom", "bum-bailey", "bugbear", "boar-pig", "bladder", "barnacle", "baggage", "apple-john"];
 
 // YOUR CODE HERE
+function doWilliam() {
+  var getName = prompt("Who be thou?");
+  var getHate = prompt("On a scale of one to 50, how much doth I hate thee?");
+  var collectAdj = [];
+  var adjectives = (first_word.concat(second_word)
+
+//This fails at the for statement. I can't figure out why. The prompts where working on a static 3-insult string, but now it breaks when I try to add n insults.
+  for (var n=0; n<getHate; n++) {
+  collectAdj.push(adjectives[Math.floor(Math.random() * adjectives.length)]);
+}
+  a = Math.floor(Math.random()) * 49 + 1;
+  var insult = (getName + " "+ "you" + " " + collectAdj + " " + third_word[a] + ".");
+  return insult;
+}
