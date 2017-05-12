@@ -21,6 +21,7 @@
 */
 
 // YOUR CODE HERE
+// This is a function to reverse a string
 function reverseString(string) {
   var arr = [];
   var str = '';
@@ -31,7 +32,7 @@ function reverseString(string) {
 }
 
 function isPalindrome(str){
-  var revStr = reverseString(str);
+  var revStr = reverseString(str);// reverseString(string) is called here
   var newStr = str.replace(/\s/g , "");
   if( newStr === revStr ){
     return true;
