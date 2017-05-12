@@ -26,6 +26,10 @@ var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skain
 - Allow the user to supply a proper name as an input. ("Why Justin, you villainous toad-spotted strumpet!").
 - Create a browser interface, using some combination of `prompt`, `alert`, and/or DOM manipulation.
 */
+var name = prompt("What is your name?");
+var pickANumber = prompt("Pick a number between 1 and 25");
+var userInput = parseInt(pickANumber);
+console.log(userInput);
 
 // take the input number (i.e. 10) and generate an insult formula,
 // 1) count the number of properties in var third word. do that using some "method"
@@ -51,20 +55,21 @@ var finalNoun = third_word[nounChosen];
 //=========================================
 function generateInsults(userInput) {
   if (userInput === 1) {
-    console.log('You ' + finalNoun);
+    alert('Why ' + name + ', you ' + finalNoun);
   }
+//  - Allow the user to supply a proper name as an input. ("Why Justin, you villainous toad-spotted strumpet!").
   // if integer = 2, combine both array first & second and select a random
   else if (userInput === 2) {
     var combinedFirstandSecond = first_word.concat(second_word);
     var numberOfCombinedAdjs = combinedFirstandSecond.length - 1;
     var combinedChosen = getRandomIntInclusive(0,numberOfCombinedAdjs);
     var finalCombined = combinedFirstandSecond[combinedChosen];
-    console.log('You ' + finalCombined + " " + finalNoun);
+    alert('Why ' + name + ', you ' + finalCombined + ' ' + finalNoun + '!');
   }
   // if integer = 3, select one from first and select from second_word
   // if integer > 3, then select odd from first and even from second; until you reach n - 1
   else if (userInput === 3) {
-      console.log('You ' + finalFirst + " " + finalSecond + " " + finalNoun);
+      alert('Why ' + name + ', you ' + finalFirst + ' ' + finalSecond + ' ' + finalNoun + '!');
   }
   else if (userInput >= 4) {
       for(i = 0; i < (userInput - 1); i+=1) {
@@ -72,11 +77,10 @@ function generateInsults(userInput) {
       var combinedMaxLength = combineForLong.length - 1;
       var combinedRandom = getRandomIntInclusive(0,combinedMaxLength);
       longInsult.push(combineForLong[combinedRandom]);
-      console.log(longInsult);
     }
-    longInsult.push(finalNoun);
-    var finalLong = ('You ' + longInsult.join(" ") + '.');
-    console.log(finalLong);
+      longInsult.push(finalNoun);
+      var finalLong = longInsult.join(" ");
+      alert('Why ' + name + ' you ' + finalLong + '!');
 //var str = array.join(" "); // 'apple tree'
 
     }
@@ -93,5 +97,4 @@ var finalFirst = first_word[firstChosen];
 var numberOfSecond = second_word.length - 1;
 var secondChosen = getRandomIntInclusive(0,numberOfSecond);
 var finalSecond = second_word[secondChosen];
-
-generateInsults(10);
+generateInsults(userInput);
