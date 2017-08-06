@@ -17,3 +17,18 @@ var second_word = ["weather-bitten", "unchin-snouted", "toad-spotted", "tickle-b
 var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skainsmate", "scut", "ratsbane", "pumpion", "puttock", "pignut", "pigeon-egg", "nut-hook", "mumble-news", "moldwarp", "miscreant", "minnow", "measle", "mammet", "malt-worm", "maggot-pie", "lout", "lewdster", "joithead", "hugger-mugger", "horn-beast", "hedge-pig", "harpy", "haggard", "gudgeon", "giglet", "fustilarian", "foot-licker", "flirt-gill", "flax-wench", "flap-dragon", "dewberry", "death-token", "codpiece", "coxcomb", "clotpole", "clack-dish", "canker-blossom", "bum-bailey", "bugbear", "boar-pig", "bladder", "barnacle", "baggage", "apple-john"];
 
 // YOUR CODE HERE
+
+function generateInsult(num) {
+  let wordOne = Math.floor(Math.random() * first_word.length);
+  let wordTwo = Math.floor(Math.random() * second_word.length);
+  let wordThree = Math.floor(Math.random() * third_word.length);
+  let insult;
+
+  if (num === 2) {
+    insult = `You ${first_word[wordOne]}, ${second_word[wordTwo]}, you!!`
+  } else if (num === 3) {
+    insult = `You ${first_word[wordOne]}, ${second_word[wordTwo]}, ${third_word[wordThree]} you!!`
+  }
+  return insult;
+}
+console.log(generateInsult());

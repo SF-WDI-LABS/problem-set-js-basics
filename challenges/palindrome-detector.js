@@ -21,3 +21,10 @@
 */
 
 // YOUR CODE HERE
+
+
+function isPalindrome(str) {
+  let strRev = str.split().reverse().join();
+  return strRev === str ? true : false;
+}
+console.log(isPalindrome("tacocat"));
