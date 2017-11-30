@@ -34,7 +34,7 @@ var isPalindrome = function (word) {
 
 }
 
-isPalindrome("apple");
+isPalindrome("mom");
 
 
 

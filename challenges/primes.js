@@ -10,3 +10,25 @@
 */
 
 // YOUR CODE HERE
+
+//1. 
+
+let isPrime = function(num) {
+  if (num === 2 || num % 2 === 1) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
+
+//2.
+
+let primes = function(max) {
+  let primeArray = [];
+  for (let i = 2; i <= max; i++) {
+    if (i === 2 || i % 2 === 1) {
+      primeArray.push(i);
+    }
+  }
+  console.log(primeArray);
+}

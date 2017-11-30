@@ -17,3 +17,27 @@ var second_word = ["weather-bitten", "unchin-snouted", "toad-spotted", "tickle-b
 var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skainsmate", "scut", "ratsbane", "pumpion", "puttock", "pignut", "pigeon-egg", "nut-hook", "mumble-news", "moldwarp", "miscreant", "minnow", "measle", "mammet", "malt-worm", "maggot-pie", "lout", "lewdster", "joithead", "hugger-mugger", "horn-beast", "hedge-pig", "harpy", "haggard", "gudgeon", "giglet", "fustilarian", "foot-licker", "flirt-gill", "flax-wench", "flap-dragon", "dewberry", "death-token", "codpiece", "coxcomb", "clotpole", "clack-dish", "canker-blossom", "bum-bailey", "bugbear", "boar-pig", "bladder", "barnacle", "baggage", "apple-john"];
 
 // YOUR CODE HERE
+
+
+let generateInsult = function() {
+var result;
+let randOne = first_word[(Math.random() * first_word.length) | 0];
+let randTwo = second_word[(Math.random() * second_word.length) | 0];
+let randThree = third_word[(Math.random() * third_word.length) | 0];
+
+let askName = prompt("Who is this scoundrel that needs insulting?", "Enter a name");
+let numOfInsults = prompt("How many insults to give?", "Enter a number up to 3");
+  if(numOfInsults === "1") {
+    result = askName + ", you are " + randOne + "!";
+  } else if (numOfInsults === "2") {
+    result = askName + ", you are " + randOne + " and " + randTwo + "!";
+  } else if (numOfInsults === "3") {
+    result = askName + ", you are a " + randOne + ", " + randTwo + " " + randThree + "!";
+  }
+  console.log(result);
+  document.getElementsByTagName('h1')[0].innerHTML = result;
+}
+
+generateInsult();
+
+
