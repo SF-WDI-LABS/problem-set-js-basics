@@ -30,9 +30,8 @@ function isPalindrome(str) {
   }
 
   if (revString == newStr) {
-    console.log(str + " is a palindrome");
+    return true;
   } else {
-    console.log(str + " is not a palindrome");
+    return false;
   }
-  return newStr
 };
