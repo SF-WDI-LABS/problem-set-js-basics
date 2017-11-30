@@ -10,3 +10,30 @@
 */
 
 // YOUR CODE HERE
+function isPrime(num) {
+  if (num < 2) {
+    return false
+  } else {
+  for (var i = 2; i < num; i++) {
+    if (num % i === 0) {
+      return false
+    }
+  }
+  return true
+  };
+};
+
+function prime(max) {
+  var primeArr = [];
+  var number = 2;
+
+while (primeArr.length < max) { //loop runs until the length of the array of prime number is equal to max
+
+      let isItAPrime = isPrime(number);
+      if (isItAPrime) {
+        primeArr.push(number);
+    }
+    number += 1;
+  }
+return primeArr
+};

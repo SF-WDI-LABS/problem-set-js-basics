@@ -21,3 +21,18 @@
 */
 
 // YOUR CODE HERE
+
+function isPalindrome(str) {
+  var newStr = str.replace(/[^\w\s]/gi, '').replace(/ /g,'').toLowerCase(); //remove punctuation and spaces, convert to lowercas
+  let revString = ""
+  for (var i = newStr.length - 1; i >= 0; i-= 1 ) {
+    revString += newStr[i];
+  }
+
+  if (revString == newStr) {
+    console.log(str + " is a palindrome");
+  } else {
+    console.log(str + " is not a palindrome");
+  }
+  return newStr
+};

@@ -22,3 +22,13 @@
 */
 
 // YOUR CODE HERE
+function numberOfBottles(numBottles) {
+
+  for (let num = numBottles; num > 0; num -= 1) {
+    console.log(num + " bottles of beer on the wall,");
+    console.log(num + " bottles of beer");
+    console.log("Take one down and pass it around,");
+    console.log(num - 1 + " bottles of beer on the wall,");
+    console.log();
+  }
+}
