@@ -21,3 +21,32 @@
 */
 
 // YOUR CODE HERE
+
+function isPalindrome(userInput) {
+  var  arrayInput = userInput.split('');
+
+  let toStop = false;
+
+  while (!toStop) {
+    toStop = true;
+    
+    for (var i=0; 2*i < userInput.length; i++) {
+    let firstLetter = arrayInput[i];
+    let lastLetter = arrayInput[userInput.length-1-i];
+
+    if (firstLetter === lastLetter) {
+        console.log("this is a Palindrome")
+        toStop = true;
+
+    } else { console.log("this is not a Palindrome")}
+  }
+  }
+
+  }
+
+
+
+
+
+
+
