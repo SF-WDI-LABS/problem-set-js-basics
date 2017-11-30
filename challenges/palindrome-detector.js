@@ -21,3 +21,23 @@
 */
 
 // YOUR CODE HERE
+
+let isPalindrome = function(string){
+  let letters = string.split('');
+  let length = letters.length; 
+  for (i=0;i<string.length;i++){ 
+    if (letters[i] != letters[length-1]){
+      return false; 
+
+    }
+    else{
+      return true; 
+    }
+    length-=1; 
+  };
+};
+
+isPalindrome("hello"); 
+
+/* check last value against first, second to last against second, etc. 
+if any of them don't match, return false for palindrome -- otherwise, it's a palindrome 
