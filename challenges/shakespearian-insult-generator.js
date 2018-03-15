@@ -1,5 +1,6 @@
+console.log('Loaded shakespearian-insult-generator.js!');
 /*
-  Shakesperian Insult Generator
+  Shakespearian Insult Generator
 
   You saucy, fly-bitten, minnow, you! Randomly generate some zingers using the supplied list of words!
 
