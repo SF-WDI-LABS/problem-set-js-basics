@@ -1,3 +1,5 @@
+console.log('Loaded palindrome-detector.js!');
+
 /*
   Palindrome Detector
 

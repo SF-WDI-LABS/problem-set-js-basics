@@ -1,3 +1,4 @@
+console.log('Loaded primes.js!');
 /*
 
   1. Create a function `isPrime(num)` that returns true if the number passed in is a prime number
