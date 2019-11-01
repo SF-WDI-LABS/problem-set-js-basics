@@ -23,3 +23,21 @@ console.log('Loaded palindrome-detector.js!');
 */
 
 // YOUR CODE HERE
+
+var isPalindrome = function (word) {
+  let arrayOfLetters = word.split("");
+  for (let i = 0; i <= arrayOfLetters.length; i++) {
+    if(arrayOfLetters[i] === arrayOfLetters[(arrayOfLetters.length - (i + 1))]) {
+      console.log(true);
+    } else {
+      console.log(false);
+    }
+  }
+
+}
+
+isPalindrome("mom");
+
+
+
+

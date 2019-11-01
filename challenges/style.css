@@ -1,0 +1,11 @@
+h1 {
+  color: red;
+  font-family: arial;
+  text-align: center;
+  border: 10px solid powderblue;
+  padding: 40px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 40px;
+  margin: 50px 50px;
+}
