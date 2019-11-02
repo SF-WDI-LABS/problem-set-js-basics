@@ -23,3 +23,7 @@ console.log('Loaded palindrome-detector.js!');
 */
 
 // YOUR CODE HERE
+
+function isPalindrome(input) {
+  return (input.split('').reverse().join('') === input);
+};
